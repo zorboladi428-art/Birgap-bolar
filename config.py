@@ -1,7 +1,9 @@
-BOT_TOKEN = "8481380905:AAGg0NtgvsPMnT-RCKYBEM_q6PWSF9VPO_M"
-OPENAI_API_KEY = "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"
+import os
 
-ADMIN_ID = 7824942822
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-CHANNELS = ["https://t.me/+Aig3bt1MCVQxNzdi"]   # majburiy obuna
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
+
+CHANNELS = ["@kanal1"]
 DAILY_LIMIT = 10
